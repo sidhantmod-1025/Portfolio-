@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<nhtml>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sidhant Kumar | Portfolio</title>
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color:white;
+  scroll-behavior:smothly;
+}
+ 
+
+/* Header */
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 50px;
+  position:fixed;
+  width:100%;
+  background:rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+}
+
+header h2{
+  color:#00f5ff;
+}
+
+nav a{
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#00f5ff;
+}
+
+/* Hero Section */
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:50px;
+}
+
+.hero span{
+  color:#00f5ff;
+}
+
+.btn{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  background:#00f5ff;
+  color:black;
+  font-weight:bold;
+  cursor:pointer;
+  border-radius:30px;
+  transition:0.4s;
+}
+
+.btn:hover{
+  box-shadow:0 0 20px #00f5ff;
+  transform:scale(1.1);
+}
+
+/* Sections */
+section{
+  padding:100px 10%;
+}
+
+.section-title{
+  text-align:center;
+  font-size:35px;
+  margin-bottom:50px;
+  color:#00f5ff;
+}
+
+/* Skills */
+.skills{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.skill-box{
+  padding:20px;
+  background:rgba(255,255,255,0.1);
+  border-radius:10px;
+  width:150px;
+  text-align:center;
+  transition:0.4s;
+}
+
+.skill-box:hover{
+  transform:translateY(-10px);
+  background:#00f5ff;
+  color:black;
+}
+
+/* Projects */
+.project{
+  background:rgba(255,255,255,0.1);
+  padding:20px;
+  margin-bottom:20px;
+  border-radius:10px;
+  transition:0.4s;
+}
+
+.project:hover{
+  transform:scale(1.03);
+}
+
+/* Contact */
+.contact input, .contact textarea{
+  width:100%;
+  padding:10px;
+  margin-bottom:15px;
+  border:none;
+  border-radius:5px;
+}
+
+footer{
+  
+  text-align:center;
+  padding:20px;
+  background:black;
+}
+
+@media(max-width:768px){
+  header{
+    padding:20px;
+  }
+  .hero h1{
+    font-size:30px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Sidhant.k</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Hello, I'm <span>Sidhant Kumar</span></h1>
+  <p>Frontend Developer | HTML | CSS | JavaScript</p>
+  <button class="btn" onclick="scrollToSection()">Hire Me</button>
+</div>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p>Hi, I'm Sidhant Kumar, a motivated Frontend Developer who loves turning ideas into beautiful and functional websites. I specialize in HTML, CSS, and JavaScript, and I focus on creating responsive and interactive web applications.
+I am continuously learning new technologies and improving my problem-solving skills to build better digital experiences.</p>
+    </p>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills">
+    <div class="skill-box">C</div>
+    <div class="skill-box">C++</div>
+    <div class="skill-box">HTML</div>
+    <div class="skill-box">CSS</div>
+    <div class="skill-box">JavaScript</div>
+    <div class="skill-box">Responsive Design</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="project">
+    <h3>Portfolio Website</h3>
+    <p>Responsive personal portfolio using HTML & CSS.</p>
+  </div>
+  <div class="project">
+    <h3>student management</h3>
+    <p>Using HTML and CSS</p>
+  </div>
+  <div class="project">
+    <h3>Basic Registration form</h3>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <div class="contact">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea rows="4" placeholder="Your Message"></textarea>
+    <button class="btn">Send Message</button>
+  </div>
+</section>
+
+<footer>
+  <p><h4>©sidhant2542021@gmail.com <br>
+    contact us: 79xxxxxx62</h4></p>
+</footer>
+
+<script>
+function scrollToSection(){
+  document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+}
+</script>
+
+</body>
+</html>
+
